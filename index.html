@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon hub perso | Bienvenue </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Fustat', "Helvetica", sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 2rem 1rem;
+      background: #111827;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      width: 60%;
+      max-width: 1000px;
+      min-width: 300px;
+    }
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 0.3rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+        background-color: #1f2937;
+        border-radius: .75rem;
+        padding: 1.5rem;
+        border: 1px solid #ffffff1a;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        user-select: none;
+        color: #fff;
+        transition: transform 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px, rgba(0, 0, 0, 0.7) 0px 1px 2px;
+    }
+    .card a {
+      color: inherit;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-decoration: none;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 480px) {
+      .container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <section aria-labelledby="projects-title">
+      <h2 id="projects-title">Mes projets</h2>
+      <div class="grid">
+        <div class="card"><a href="https://body-radio.com" target="_blank" rel="noopener">La radio</a></div>
+        <div class="card"><a href="https://body-radio.com/albums" target="_blank" rel="noopener">Mes albums préférés</a></div>
+        <div class="card"><a href="https://pizza.niprobin.com" target="_blank" rel="noopener">Les pizzas de Lyon</a></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="server-title">
+      <h2 id="server-title">Mon serveur privé</h2>
+      <div class="grid">
+        <div class="card"><a href="https://files.niprobin.com" target="_blank" rel="noopener">Accès à mes fichiers</a></div>
+        <div class="card"><a href="https://books.niprobin.com" target="_blank" rel="noopener">Mes livres</a></div>
+        <div class="card"><a href="https://comics.niprobin.com" target="_blank" rel="noopener">Mes comics</a></div>
+        <div class="card"><a href="https://jellyfin.niprobin.com" target="_blank" rel="noopener">Films & Musique</a></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
