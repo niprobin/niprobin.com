@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mon hub perso | Bienvenue </title>
+  <script src="https://kit.fontawesome.com/cd85a69654.js" crossorigin="anonymous"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
 
@@ -11,6 +12,14 @@
     * {
       box-sizing: border-box;
     }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-size:1.2em;
+      font-weight: 600;
+    }
+
     body {
       font-family: 'Fustat', "Helvetica", sans-serif;
       color: #fff;
@@ -48,7 +57,7 @@
         text-align: center;
         cursor: pointer;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         user-select: none;
         color: #fff;
@@ -58,16 +67,7 @@
         transform: translateY(-5px);
         box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px, rgba(0, 0, 0, 0.7) 0px 1px 2px;
     }
-    .card a {
-      color: inherit;
-      font-weight: 600;
-      font-size: 1.2rem;
-      text-decoration: none;
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+
     @media (max-width: 480px) {
       .container {
         width: 90%;
@@ -80,19 +80,19 @@
     <section aria-labelledby="projects-title">
       <h2 id="projects-title">Mes projets</h2>
       <div class="grid">
-        <div class="card"><a href="https://body-radio.com" target="_blank" rel="noopener">La radio</a></div>
-        <div class="card"><a href="https://body-radio.com/albums" target="_blank" rel="noopener">Mes albums préférés</a></div>
-        <div class="card"><a href="https://pizza.niprobin.com" target="_blank" rel="noopener">Les pizzas de Lyon</a></div>
+        <a href="https://body-radio.com" target="_blank" rel="noopener"><div class="card"><i class="fas fa-broadcast-tower"></i>&ensp;La radio</div></a>
+        <a href="https://body-radio.com/albums" target="_blank" rel="noopener"><div class="card"><i class="fas fa-compact-disc"></i>&ensp;Mes albums préférés</div></a>
+        <a href="https://pizza.niprobin.com" target="_blank" rel="noopener"><div class="card"><i class="fas fa-pizza-slice"></i>&ensp;Les pizzas de Lyon</div></a>
       </div>
     </section>
 
     <section aria-labelledby="server-title">
       <h2 id="server-title">Mon serveur privé</h2>
       <div class="grid">
-        <div class="card"><a href="https://files.niprobin.com" target="_blank" rel="noopener">Accès à mes fichiers</a></div>
-        <div class="card"><a href="https://books.niprobin.com" target="_blank" rel="noopener">Mes livres</a></div>
-        <div class="card"><a href="https://comics.niprobin.com" target="_blank" rel="noopener">Mes comics</a></div>
-        <div class="card"><a href="https://jellyfin.niprobin.com" target="_blank" rel="noopener">Films & Musique</a></div>
+        <a href="https://files.niprobin.com" target="_blank" rel="noopener"><div class="card"><i class="fas fa-file-alt"></i>&ensp;Mes fichiers</div></a>
+        <a href="https://books.niprobin.com" target="_blank" rel="noopener"><div class="card"><i class="fas fa-book"></i>&ensp;Mes livres</div></a>
+        <a href="https://comics.niprobin.com" target="_blank" rel="noopener"><div class="card"><i class="fas fa-book-open"></i>&ensp;Mes comics</div></a>
+        <a href="https://jellyfin.niprobin.com" target="_blank" rel="noopener"><div class="card"><i class="fas fa-music"></i>&ensp;Musique & Films</div></a>
       </div>
     </section>
   </main>
